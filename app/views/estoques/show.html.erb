@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Item:</strong>
+  <%= @estoque.item %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @estoque.tipo %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @estoque.serial %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @estoque.site %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @estoque.status %>
+</p>
+
+<p>
+  <strong>Observacao:</strong>
+  <%= @estoque.observacao %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @estoque.usuario %>
+</p>
+
+<%= link_to 'Edit', edit_estoque_path(@estoque) %> |
+<%= link_to 'Back', estoques_path %>
