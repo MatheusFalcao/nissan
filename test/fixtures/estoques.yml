@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item: MyString
+  tipo: MyString
+  serial: MyString
+  site: MyString
+  status: MyString
+  observacao: MyString
+  usuario_id: 
+
+two:
+  item: MyString
+  tipo: MyString
+  serial: MyString
+  site: MyString
+  status: MyString
+  observacao: MyString
+  usuario_id: 
