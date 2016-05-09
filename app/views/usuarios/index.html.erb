@@ -1,0 +1,57 @@
+<h1>Listing usuarios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cpf</th>
+      <th>Rg</th>
+      <th>Nome</th>
+      <th>Gestor</th>
+      <th>Email</th>
+      <th>Nissan</th>
+      <th>Renault</th>
+      <th>Site</th>
+      <th>Gestor</th>
+      <th>Site</th>
+      <th>Data nascimento</th>
+      <th>Tipo</th>
+      <th>Nome empresa</th>
+      <th>Qcn</th>
+      <th>Setor</th>
+      <th>Funcao</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @usuarios.each do |usuario| %>
+      <tr>
+        <td><%= usuario.cpf %></td>
+        <td><%= usuario.rg %></td>
+        <td><%= usuario.nome %></td>
+        <td><%= usuario.gestor %></td>
+        <td><%= usuario.email %></td>
+        <td><%= usuario.nissan_id %></td>
+        <td><%= usuario.renault_id %></td>
+        <td><%= usuario.site %></td>
+        <td><%= usuario.gestor %></td>
+        <td><%= usuario.site %></td>
+        <td><%= usuario.data_nascimento %></td>
+        <td><%= usuario.tipo %></td>
+        <td><%= usuario.nome_empresa %></td>
+        <td><%= usuario.qcn %></td>
+        <td><%= usuario.setor %></td>
+        <td><%= usuario.funcao %></td>
+        <td><%= usuario.status %></td>
+        <td><%= link_to 'Show', usuario %></td>
+        <td><%= link_to 'Edit', edit_usuario_path(usuario) %></td>
+        <td><%= link_to 'Destroy', usuario, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Usuario', new_usuario_path %>

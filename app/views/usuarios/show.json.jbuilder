@@ -1,0 +1,1 @@
+json.extract! @usuario, :id, :cpf, :rg, :nome, :gestor, :email, :nissan_id, :renault_id, :site, :gestor, :site, :data_nascimento, :tipo, :nome_empresa, :qcn, :setor, :funcao, :status, :created_at, :updated_at
