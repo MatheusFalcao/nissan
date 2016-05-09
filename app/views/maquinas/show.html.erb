@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Hostname:</strong>
+  <%= @maquina.hostname %>
+</p>
+
+<p>
+  <strong>Serial:</strong>
+  <%= @maquina.serial %>
+</p>
+
+<p>
+  <strong>Part number:</strong>
+  <%= @maquina.part_number %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @maquina.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @maquina.modelo %>
+</p>
+
+<p>
+  <strong>Mac:</strong>
+  <%= @maquina.mac %>
+</p>
+
+<p>
+  <strong>Sistema operacional:</strong>
+  <%= @maquina.sistema_operacional %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @maquina.status %>
+</p>
+
+<p>
+  <strong>Site:</strong>
+  <%= @maquina.site %>
+</p>
+
+<p>
+  <strong>Observacao:</strong>
+  <%= @maquina.observacao %>
+</p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @maquina.usuario %>
+</p>
+
+<%= link_to 'Edit', edit_maquina_path(@maquina) %> |
+<%= link_to 'Back', maquinas_path %>

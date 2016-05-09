@@ -1,0 +1,45 @@
+<h1>Listing maquinas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Hostname</th>
+      <th>Serial</th>
+      <th>Part number</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Mac</th>
+      <th>Sistema operacional</th>
+      <th>Status</th>
+      <th>Site</th>
+      <th>Observacao</th>
+      <th>Usuario</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @maquinas.each do |maquina| %>
+      <tr>
+        <td><%= maquina.hostname %></td>
+        <td><%= maquina.serial %></td>
+        <td><%= maquina.part_number %></td>
+        <td><%= maquina.marca %></td>
+        <td><%= maquina.modelo %></td>
+        <td><%= maquina.mac %></td>
+        <td><%= maquina.sistema_operacional %></td>
+        <td><%= maquina.status %></td>
+        <td><%= maquina.site %></td>
+        <td><%= maquina.observacao %></td>
+        <td><%= maquina.usuario %></td>
+        <td><%= link_to 'Show', maquina %></td>
+        <td><%= link_to 'Edit', edit_maquina_path(maquina) %></td>
+        <td><%= link_to 'Destroy', maquina, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Maquina', new_maquina_path %>
