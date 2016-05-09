@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cpf: MyString
+  rg: MyString
+  nome: MyString
+  gestor: MyString
+  email: MyString
+  nissan_id: MyString
+  renault_id: MyString
+  site: MyString
+  gestor: MyString
+  site: MyString
+  data_nascimento: 2016-05-09
+  tipo: MyString
+  nome_empresa: MyString
+  qcn: MyString
+  setor: MyString
+  funcao: MyString
+  status: MyString
+
+two:
+  cpf: MyString
+  rg: MyString
+  nome: MyString
+  gestor: MyString
+  email: MyString
+  nissan_id: MyString
+  renault_id: MyString
+  site: MyString
+  gestor: MyString
+  site: MyString
+  data_nascimento: 2016-05-09
+  tipo: MyString
+  nome_empresa: MyString
+  qcn: MyString
+  setor: MyString
+  funcao: MyString
+  status: MyString
